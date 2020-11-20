@@ -23,7 +23,7 @@ namespace Jp.UI.SSO.Controllers.Home
         [ResponseCache(Location = ResponseCacheLocation.Client, NoStore = true)]
         public IActionResult Index()
         {
-            return View();
+            return RedirectToActionPermanent("Index", "Grants");
         }
 
         /// <summary>

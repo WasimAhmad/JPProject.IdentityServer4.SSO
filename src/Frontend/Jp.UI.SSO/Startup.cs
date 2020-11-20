@@ -39,6 +39,7 @@ namespace Jp.UI.SSO
         {
 
             services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation()
                 .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, opts => { opts.ResourcesPath = "Resources"; })
                 .AddDataAnnotationsLocalization();
             services.AddRazorPages();
